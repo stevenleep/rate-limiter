@@ -1,6 +1,6 @@
 {
   "name": "@stevenleep/rate-limiter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A comprehensive TypeScript toolkit for rate limiting, task queuing, and resource pooling using native iterator patterns",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

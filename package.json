@@ -1,0 +1,61 @@
+{
+  "name": "@stevenleep/rate-limiter",
+  "version": "1.0.0",
+  "description": "A comprehensive TypeScript toolkit for rate limiting, task queuing, and resource pooling using native iterator patterns",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "examples": "ts-node src/examples.ts",
+    "test": "npm run build && npm run examples",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "rate-limiter",
+    "rate-limiting",
+    "typescript",
+    "iterator",
+    "iterable",
+    "sliding-window",
+    "task-queue",
+    "resource-pool",
+    "concurrency",
+    "async",
+    "queue",
+    "pool",
+    "generic",
+    "functional"
+  ],
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevenleep/rate-limiter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stevenleep/rate-limiter/issues"
+  },
+  "homepage": "https://github.com/stevenleep/rate-limiter#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

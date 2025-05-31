@@ -1,7 +1,7 @@
 {
   "name": "@stevenleep/rate-limiter",
-  "version": "1.0.1",
-  "description": "A comprehensive TypeScript toolkit for rate limiting, task queuing, and resource pooling using native iterator patterns",
+  "version": "1.0.2",
+  "description": "Production-ready rate limiting, task queuing, and resource management toolkit with zero dependencies",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -11,28 +11,26 @@
   ],
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "npm run build",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
     "examples": "ts-node src/examples.ts",
-    "test": "npm run build && npm run examples",
-    "clean": "rm -rf dist"
+    "test": "npm run build && npm run examples"
   },
   "keywords": [
     "rate-limiter",
     "rate-limiting",
-    "typescript",
-    "iterator",
-    "iterable",
     "sliding-window",
     "task-queue",
     "resource-pool",
     "concurrency",
-    "async",
+    "throttle",
     "queue",
     "pool",
-    "generic",
-    "functional"
+    "iterator",
+    "typescript",
+    "zero-dependencies"
   ],
   "author": {
     "name": "Your Name",
